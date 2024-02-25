@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Signature Web App</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body{
+            background-color: #D0B3DB;
+        }
+
+        canvas {
+            background-color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="options">
+            <input type="color" id="penColor">
+        </div>
+        <canvas id="signatureCanvas" width="400" height="200"></canvas>
+        <div class="options">
+            
+            <br><br>
+            
+            <input type="radio" id="transparentBg" name="bgOption" value="transparent" checked>
+            <label for="transparentBg">Transparent Background</label>
+            
+            <input type="radio" id="whiteBg" name="bgOption" value="white">
+            <label for="whiteBg">White Background</label>
+            <br><br>
+            <button class="clear-btn" onclick="clearCanvas()">Clear All</button>
+            <button class="download-btn" onclick="downloadPNG()">Download PNG</button>
+            
+
+            
+        </div>
+        
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
