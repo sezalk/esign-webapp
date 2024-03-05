@@ -18,4 +18,4 @@ This web application allows users to create and download a PNG version of their 
 
 ## Link to Website
 
-Visit our website [here]([https://www.example.com](https://esign-one.vercel.app)https://esign-one.vercel.app) for more information.
+Visit our website [here](https://esign-one.vercel.app) for more information.
